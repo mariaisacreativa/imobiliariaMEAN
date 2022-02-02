@@ -1,0 +1,21 @@
+{
+  "name": "node-house",
+  "version": "0.0.1",
+  "description": "Ejemplo de backend para la empres Node-House del sector inmobiliario",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "inmobiliario",
+    "apartamentos"
+  ],
+  "author": "Carlos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.8"
+  }
+}
