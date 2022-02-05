@@ -1,0 +1,14 @@
+<div class="card text-center">
+    <div class="card-body">
+        <h5 class="card-title">Bienvenido a la inmobiliara node-home</h5>
+        <p class="card-text">Aquí encontrará multitud de apartamentos disponibles para ocupación inmediata y a la medida de sus necesidades.</p>
+        <a routerLink="/apartamentos" class="btn btn-primary">Ver apartamentos</a>
+        <br>
+        <!--<button [disabled]="disableBtn">{{btnText}}</button>-->
+        <br>
+        <a routerLink="/login" class="btn btn-primary" *ngIf="!isLogged">Login</a>
+    </div>
+    <div class="card-footer text-muted">
+        ...
+    </div>
+</div>

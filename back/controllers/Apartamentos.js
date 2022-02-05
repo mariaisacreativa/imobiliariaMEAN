@@ -4,7 +4,7 @@ const listApartamentos = (req, res)=>{
     console.log(req.asesor)
     Apartamento.find((err, apartamentos)=>{
         if(err) res.send(err)
-        res.send(apartamentos)
+        //res.send(apartamentos)
     })
 }
 

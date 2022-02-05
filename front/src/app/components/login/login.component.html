@@ -1,0 +1,22 @@
+<div class="card text-center">
+    <div class="card-body">
+        <h5 class="card-title">Iniciar sesión</h5>
+        <p class="card-text">Ingresa tu nombre de usuario y contraseña...</p>
+        
+        <form (submit)="login()">
+            <div class="mb-3">
+                <label for="user" class="form-label">Usuario</label>
+                <input type="text" class="form-control" maxlength="10" id="user" name="user" aria-describedby="emailHelp" [(ngModel)]="loginData.usuario">
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="pass" name="pass" [(ngModel)]="loginData.password" >
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar</button>
+            <br>
+            <br>
+            <!--<button class="btn btn-primary" (click)="borrarData()">Borrar</button>-->
+        </form>
+
+    </div>
+</div>

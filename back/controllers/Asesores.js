@@ -1,6 +1,7 @@
 const Asesores = require("../models/Asesor")
 
 const login = (req, res) => {
+    console.log("me llamaron")
     req.body.usuario && req.body.password ?
         Asesores.findOne({ usuario: req.body.usuario }, (err, user) => {
             console.log(user)
