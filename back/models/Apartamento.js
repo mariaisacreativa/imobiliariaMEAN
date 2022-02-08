@@ -7,6 +7,9 @@ const apartamentoSchema = new Schema({
     ubicacion:{
         type: String
     },
+    dir:{
+        type: String
+    }
 });
 
 module.exports = model("Apartamento",apartamentoSchema,"apartamentos")

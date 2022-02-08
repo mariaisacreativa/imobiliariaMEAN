@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +12,6 @@ import { VoidComponent } from './components/void/void.component';
 import { LoginComponent } from './components/login/login.component';
 import { ApartamentosComponent } from './components/apartamentos/apartamentos.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { GestionComponent } from './components/gestion/gestion.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +20,15 @@ import { GestionComponent } from './components/gestion/gestion.component';
     VoidComponent,
     LoginComponent,
     ApartamentosComponent,
-    NavbarComponent,
-    GestionComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
